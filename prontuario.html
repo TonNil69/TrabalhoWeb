@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body background="fundo.jpg">
     <div class="container">
         <div class="title">
             <h1>Prontuário Médico</h1>
@@ -19,7 +19,7 @@
             <form action="#" class="form-horizontal">
                 <div class="row">
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Nome: </label>
+                        <label class="col-md-4 control-label" id="labels">Nome: </label>
                         <div class="col-md-6">
                             <input type="text" class="form-control" readonly value="José Augusto França" id="Nome">
                         </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group">
-                        <label class="col-md-4 control-label">CPF: </label>
+                        <label class="col-md-4 control-label" id="labels">CPF: </label>
                         <div class="col-md-6">
                             <input type="text" class="form-control" readonly value="123.456.789-00" id="CPF">
                         </div>
@@ -35,58 +35,45 @@
                 </div>
                 <div class="row">
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Telefone:</label>
+                        <label class="col-md-4 control-label" id="labels">Telefone:</label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" readonly value="(48) 9999-9999"
-                                id="Telefone">
+                            <input type="text" class="form-control" readonly value="(48) 9999-9999" id="Telefone">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Anamnese </label>
+                        <label class="col-md-4 control-label" id="labels">Anamnese </label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" readonly value="Anamnese"
-                                id="Anamnese">
+                            <input type="text" class="form-control" readonly value="Anamnese" id="Anamnese">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Diagnósticos </label>
+                        <label class="col-md-4 control-label" id="labels">Diagnósticos </label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" readonly value="H1N1"
-                                id="Diagnósticos">
+                            <input type="text" class="form-control" readonly value="H1N1" id="Diagnósticos">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">Tratamentos </label>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" readonly value="Antiviral, Analgésico e Anti-inflamatórios não esteroides"
-                                    id="Tratamentos">
-                            </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="labels">Tratamentos </label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" readonly
+                                value="Antiviral, Analgésico e Anti-inflamatórios não esteroides" id="Tratamentos">
                         </div>
-                    </div>
-                    <div class="row">
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">Clique para baixar o exame </label>
-                                <div class="col-md-6">
-                                   <button class="btnSubmit">Baixar</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                <!--    <div class="row">
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Tipo de certificado: </label>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" readonly value="Tipo de certificado" id="input-teste">
                     </div>
                 </div>
-            </div> -->
+                <div class="row">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" id="labels">Clique para baixar o exame </label>
+                        <div class="col-md-6">
+                            <button class="btnSubmit">Baixar</button>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
 </body>
