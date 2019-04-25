@@ -51,15 +51,16 @@
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
-                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <img src="ufsc.jpg" alt="homepage" class="dark-logo" width="50px" />
                             
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span>
-                         <!-- dark Logo text -->
-                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                         </span> </a>
+                            <!-- dark Logo text -->
+                            
+                        </span>
+                    </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -73,7 +74,7 @@
                         <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
                         <li class="nav-item hidden-sm-down">
                             <form class="app-search p-l-20">
-                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a>
+                                <input type="text" class="form-control" placeholder="Pesquisar..."> <a class="srh-btn"><i class="ti-search"></i></a>
                             </form>
                         </li>
                     </ul>
@@ -82,7 +83,7 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />Markarn Doe</a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="muraro.png" alt="user" class="profile-pic m-r-5" />Nome do Médico</a>
                         </li>
                     </ul>
                 </div>
@@ -100,31 +101,15 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
+                        
                         <li>
-                            <a href="index.html" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Dashboard</a>
+                            <a href="paginamedico.html" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Seu Perfil</a>
                         </li>
                         <li>
-                            <a href="pages-profile.html" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
-                        </li>
-                        <li>
-                            <a href="table-basic.html" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Basic Table</a>
-                        </li>
-                        <li>
-                            <a href="icon-fontawesome.html" class="waves-effect"><i class="fa fa-font m-r-10" aria-hidden="true"></i>Icons</a>
-                        </li>
-                        <li>
-                            <a href="map-google.html" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Google Map</a>
-                        </li>
-                        <li>
-                            <a href="pages-blank.html" class="waves-effect"><i class="fa fa-columns m-r-10" aria-hidden="true"></i>Blank Page</a>
-                        </li>
-                        <li>
-                            <a href="pages-error-404.html" class="waves-effect"><i class="fa fa-info-circle m-r-10" aria-hidden="true"></i>Error 404</a>
+                            <a href="paginapacientes.html" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Pacientes e Prontuários</a>
                         </li>
                     </ul>
-                    <div class="text-center m-t-30">
-                        <a href="https://wrappixel.com/templates/monsteradmin/" class="btn btn-danger"> Upgrade to Pro</a>
-                    </div>
+                    
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -146,14 +131,14 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Dashboard</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Pacientes e Prontuários</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a></li>
+                            <li class="breadcrumb-item active">Pacientes e Prontuários</li>
                         </ol>
                     </div>
                     <div class="col-md-6 col-4 align-self-center">
-                        <a href="https://wrappixel.com/templates/monsteradmin/" class="btn pull-right hidden-sm-down btn-success"> Upgrade to Pro</a>
+                        <a href="https://wrappixel.com/templates/monsteradmin/" class="btn pull-right hidden-sm-down btn-success"> Adicionar paciente</a>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -163,10 +148,49 @@
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-12">
+                    <!-- column -->
+                    <div class="col-sm-12">
                         <div class="card">
                             <div class="card-block">
-                                This is some text within a card block.
+                                <h4 class="card-title">Lista de Pacientes</h4>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nome</th>
+                                                <th>CPF</th>
+                                                <th>Prontuário</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Nome do Paciente</td>
+                                                <td>999.999.999-99</td>
+                                                <td>Download</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Nome do Paciente</td>
+                                                <td>999.999.999-99</td>
+                                                <td>Download</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Nome do Paciente</td>
+                                                <td>999.999.999-99</td>
+                                                <td>Download</td>
+                                            </tr>                                           
+                                             <tr>
+                                                <td>4</td>
+                                                <td>Nome do Paciente</td>
+                                                <td>999.999.999-99</td>
+                                                <td>Download</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -182,7 +206,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-                © 2017 Monster Admin by wrappixel.com
+                © Trabalho de Programação Web
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
